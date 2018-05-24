@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+body {
+	background-color:#F4F4F4;
+}
+
+#button-wrapper {
+	margin:0 auto;
+	width: 300px;
+	padding: 20px 0;
+    clear: both;
+}
+
+/* ------- BUTTON 1 (The Red Planet) ------- */
+
+#button1 {
+	color: #f4f4f4;
+	
+	/* transition properties */
+	background:#ADD7F4;
+	transition-property: background;
+  	transition-duration: 03.s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+	
+}
+
+#button1:hover {
+	background:#EA575B;
+	
+}
+
+
+/* ------- BUTTON 2 (Magellanic Clouds) ------- */
+
+#button2 {
+	background:#52718D;
+	border: 5px solid;
+	width: 390px;
+	
+	/* transition properties */
+	border-color:#7A97B2;
+	color: #f4f4f4;
+	transition-property: border-color: color;
+  	transition-duration: 0.1s;
+  	transition-timing-function: linear;
+  	transition-delay: 0;
+	
+}
+
+#button2:hover {
+	border-color:#204F81;
+	color: #183B61;
+	
+}
+
+
+/* ------- BUTTON 3 (M42 Orion) ------- */
+
+#button3 {
+	background:#E7A59A;
+	color: #f4f4f4;
+	
+	/* transition properties */
+	width: 400px;
+	height: 100px;
+	line-height: 60px;
+	transition-property: width, height, line-height;
+  	transition-duration: 0.3s;
+  	transition-timing-function: ease;
+  	transition-delay: 0;
+	
+}
+
+#button3:hover {
+    height: 120px;
+	width: 420px;
+	line-height: 80px;
+	
+}
+
+/* ------- BUTTON 4 (Cassini Mission) ------- */
+
+#button4 {
+	border: 5px solid #73746B;
+	width: 390px;
+	
+	/* transition properties */
+	background-color:#f4f4f4;
+	color: #73746B;
+	transition-property: ;
+  	transition-duration: ;
+  	transition-timing-function: ;
+  	transition-delay: ;
+				
+}
+
+#button4:hover {
+	background-color:#73746B;
+	color: #f4f4f4;
+	
+}
+
+
+/* --- BUTTON STYLING --- */
+
+a {
+	display: inline-block;
+	height: 100px;
+	width: 400px;
+	margin: 10px 0;
+    border-radius: 10px;
+	text-decoration: none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	line-height: 60px;
+}
+
+
+/* -------PLANETS (Just for fun) ------- */
+
+#animation {
+	margin: 0px auto;
+	width: 400px;
+	height: 400px;
+}
+
+#blueplanet {
+	position: relative;
+	left:177px;
+	bottom:-138px;
+	display:block; 
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #7A97B2;
+}
+
+#redplanetOrbit {
+	position: relative;
+	left:100px;
+	bottom:-10px;
+	display:block; 
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #E7A59A;
+	background: #f4f4f4, 0;
+	float: left;
+}
+
+#redplanet {
+	position: relative;
+	display:block;
+	top: 100px; 
+	left: 190px; 
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #E7A59A;
+	-webkit-animation: orbit 6s linear infinite;
+       -moz-animation: orbit 6s linear infinite;
+         -o-animation: orbit 6s linear infinite;
+            animation: orbit 6s linear infinite;
+}
+
+/* Re-appropriated from a tutorial by Dudley Storey: http://demosthenes.info/blog/860/Animating-Elements-In-Arcs-Circles-and-Ellipses-With-CSS */
+
+@-webkit-keyframes orbit {
+	from { 	-webkit-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  -webkit-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@-moz-keyframes orbit {
+	from { 	-moz-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  -moz-transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+@-o-keyframes orbit {
+	from { 	
+	-o-transform: 
+	rotate(0deg) 
+	translateX(100px) 
+	rotate(0deg); 
+	}
+	
+	to   {  
+	-o-transform: 
+	rotate(360deg) 
+	translateX(100px) 
+	rotate(-360deg); }
+}
+
+@keyframes orbit {
+	from { 	
+	transform: 
+	rotate(0deg) 
+	translateX(100px) 
+	rotate(0deg); 
+	}
+	
+	to   {  
+	transform: 
+	rotate(360deg) 
+	translateX(100px) 
+	rotate(-360deg); }
+}
+	
+	
+footer {
+	height: 100px;
+	margin:100px auto;
+}
